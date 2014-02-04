@@ -29,4 +29,4 @@ Screenshots
 
 License
 ============
-MIBadgeButton is available under the MIT license. See the LICENSE file for more info.
+MIBluredView is available under the MIT license. See the LICENSE file for more info.
