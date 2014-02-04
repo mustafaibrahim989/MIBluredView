@@ -22,6 +22,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    if([[UIScreen mainScreen] bounds].size.height == 568) {
+        [((UIImageView *)[self.view viewWithTag:1]) setImage:[UIImage imageNamed:@"springboard_5"]];
+    } else {
+        [((UIImageView *)[self.view viewWithTag:1]) setImage:[UIImage imageNamed:@"springboard_4"]];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -16,12 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="springboardBG1" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-yx-bbM">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="springboard_5" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-yx-bbM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hRo-yx-bbM" secondAttribute="bottom" id="Rnv-KF-oBq"/>
+                            <constraint firstItem="hRo-yx-bbM" firstAttribute="top" secondItem="bNv-3x-pOt" secondAttribute="top" id="aDw-Vt-Rcs"/>
+                            <constraint firstAttribute="trailing" secondItem="hRo-yx-bbM" secondAttribute="trailing" id="l4y-DJ-EtU"/>
+                            <constraint firstItem="hRo-yx-bbM" firstAttribute="leading" secondItem="bNv-3x-pOt" secondAttribute="leading" id="tVd-p5-7ED"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MIBluredView" id="Xxd-Id-DYP">
                         <barButtonItem key="rightBarButtonItem" title="Show" id="2dM-QQ-qyu">
@@ -58,7 +64,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="springboardBG1" width="400" height="711"/>
+        <image name="springboard_5" width="400" height="711"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
