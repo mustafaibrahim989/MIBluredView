@@ -21,6 +21,10 @@
 		3D2B34A418A115880065F7C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B348618A115880065F7C2 /* UIKit.framework */; };
 		3D2B34AC18A115880065F7C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B34AA18A115880065F7C2 /* InfoPlist.strings */; };
 		3D2B34AE18A115880065F7C2 /* MIBluredViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B34AD18A115880065F7C2 /* MIBluredViewTests.m */; };
+		3D2B34BC18A115D80065F7C2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B34B918A115D80065F7C2 /* UIImage+ImageEffects.m */; };
+		3D2B34BD18A115D80065F7C2 /* UIView+MIBluredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B34BB18A115D80065F7C2 /* UIView+MIBluredView.m */; };
+		3D2B34C118A115E00065F7C2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B34BF18A115E00065F7C2 /* 1.png */; };
+		3D2B34C218A115E00065F7C2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B34C018A115E00065F7C2 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		3D2B34A918A115880065F7C2 /* MIBluredViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MIBluredViewTests-Info.plist"; sourceTree = "<group>"; };
 		3D2B34AB18A115880065F7C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D2B34AD18A115880065F7C2 /* MIBluredViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MIBluredViewTests.m; sourceTree = "<group>"; };
+		3D2B34B818A115D80065F7C2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		3D2B34B918A115D80065F7C2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		3D2B34BA18A115D80065F7C2 /* UIView+MIBluredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MIBluredView.h"; sourceTree = "<group>"; };
+		3D2B34BB18A115D80065F7C2 /* UIView+MIBluredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MIBluredView.m"; sourceTree = "<group>"; };
+		3D2B34BF18A115E00065F7C2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		3D2B34C018A115E00065F7C2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,8 @@
 		3D2B347618A115880065F7C2 = {
 			isa = PBXGroup;
 			children = (
+				3D2B34BE18A115E00065F7C2 /* Screenshots */,
+				3D2B34B718A115D80065F7C2 /* Classes */,
 				3D2B348818A115880065F7C2 /* MIBluredView */,
 				3D2B34A718A115880065F7C2 /* MIBluredViewTests */,
 				3D2B348118A115880065F7C2 /* Frameworks */,
@@ -150,6 +162,26 @@
 				3D2B34AA18A115880065F7C2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D2B34B718A115D80065F7C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B34B818A115D80065F7C2 /* UIImage+ImageEffects.h */,
+				3D2B34B918A115D80065F7C2 /* UIImage+ImageEffects.m */,
+				3D2B34BA18A115D80065F7C2 /* UIView+MIBluredView.h */,
+				3D2B34BB18A115D80065F7C2 /* UIView+MIBluredView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D2B34BE18A115E00065F7C2 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B34BF18A115E00065F7C2 /* 1.png */,
+				3D2B34C018A115E00065F7C2 /* 2.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2B349B18A115880065F7C2 /* Images.xcassets in Resources */,
+				3D2B34C118A115E00065F7C2 /* 1.png in Resources */,
+				3D2B34C218A115E00065F7C2 /* 2.png in Resources */,
 				3D2B348D18A115880065F7C2 /* InfoPlist.strings in Resources */,
 				3D2B349618A115880065F7C2 /* Main.storyboard in Resources */,
 			);
@@ -249,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2B34BC18A115D80065F7C2 /* UIImage+ImageEffects.m in Sources */,
 				3D2B349918A115880065F7C2 /* ViewController.m in Sources */,
+				3D2B34BD18A115D80065F7C2 /* UIView+MIBluredView.m in Sources */,
 				3D2B349318A115880065F7C2 /* AppDelegate.m in Sources */,
 				3D2B348F18A115880065F7C2 /* main.m in Sources */,
 			);
