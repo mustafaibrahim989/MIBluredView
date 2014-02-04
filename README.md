@@ -22,9 +22,7 @@ Designed for iOS 7.
 
 Screenshots
 ============
-![alt tag](https://raw.github.com/mustafaibrahim989/MIBluredView/master/Screenshots/1.png)
-
-![alt tag](https://raw.github.com/mustafaibrahim989/MIBluredView/master/Screenshots/2.png)
+![alt tag](https://raw.github.com/mustafaibrahim989/MIBluredView/master/Screenshots/1.png)==![alt tag](https://raw.github.com/mustafaibrahim989/MIBluredView/master/Screenshots/2.png)
 
 
 License
