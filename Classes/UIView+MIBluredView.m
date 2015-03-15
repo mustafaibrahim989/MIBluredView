@@ -55,4 +55,33 @@
     return blurredSnapshotImage;
 }
 
++ (UIImage *)blurredSnapshot:(UIView *) view withImageRect:(CGRect)rect withTintColor:(UIColor *)tintColor withWithRadius:(CGFloat)blurRadius saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage
+{
+    // Create the image context
+    UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, view.window.screen.scale);
+    
+    // There he is! The new API method
+    [view drawViewHierarchyInRect:view.frame afterScreenUpdates:NO];
+    
+    // Get the snapshot
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // Now apply the blur effect using Apple's UIImageEffect category
+    UIImage *blurredSnapshotImage = [snapshotImage applyBlurWithRadius:blurRadius tintColor:tintColor saturationDeltaFactor:saturationDeltaFactor maskImage:maskImage];
+    
+    
+    // Be nice and clean your mess up
+    UIGraphicsEndImageContext();
+    
+    
+    // crop image to specific rect
+    UIGraphicsBeginImageContext(rect.size);
+    [blurredSnapshotImage drawAtPoint:CGPointMake(-rect.origin.x, -rect.origin.y)];
+    
+    blurredSnapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return blurredSnapshotImage;
+}
+
 @end
