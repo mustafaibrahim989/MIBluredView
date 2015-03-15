@@ -19,5 +19,6 @@ typedef enum {
 @interface UIView (MIBluredView)
 
 + (UIImage *)blurredSnapshot:(UIView *) view withImageRect:(CGRect)rect withEffect:(BlurEffect) effect;
++ (UIImage *)blurredSnapshot:(UIView *) view withImageRect:(CGRect)rect withTintColor:(UIColor *)tintColor withWithRadius:(CGFloat)blurRadius saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
 
 @end
